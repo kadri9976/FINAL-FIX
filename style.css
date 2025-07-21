@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.topbar {
+  background-color: #002147;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.kontak {
+  font-size: 14px;
+}
+
+.navbar {
+  background-color: #003366;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;  /* << Tambahan ini membuat menu rata tengah */
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+
+.nav-list li {
+  position: relative;
+}
+
+.nav-list li a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-list li a:hover {
+  background-color: #004080;
+}
+
+/* Dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content li a {
+  color: #003366;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content li a:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+
+.banner video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.overlay h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.overlay button {
+  padding: 10px 20px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Tentang */
+.tentang {
+  padding: 40px 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.tentang h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.tentang a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+/* Info */
+.info {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
+
+.info .kolom {
+  width: 45%;
+}
+
+.info h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #002147;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+/* Tambahan di bagian bawah file */
+.profil-dinamis {
+  padding: 40px 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.profil-dinamis h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.profil-dinamis p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.nav-list li a.active {
+  background-color: #004080;
+  font-weight: bold;
+}

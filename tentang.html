@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil - UNIVERSITAS HANDAYANI</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f8fc;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 80px auto;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      animation: fadeIn 1s ease;
+    }
+    h2 {
+      color: #0056b3;
+      border-bottom: 2px solid #0056b3;
+      padding-bottom: 10px;
+    }
+    p, li {
+      line-height: 1.8;
+      font-size: 16px;
+      color: #333;
+    }
+    ul {
+      margin-top: 10px;
+    }
+    .btn-beranda {
+      margin-top: 30px;
+      display: inline-block;
+      background-color: #0056b3;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .btn-beranda:hover {
+      background-color: #004091;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="konten">
+    <!-- Konten dinamis akan dimuat di sini -->
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const konten = params.get('konten');
+    const div = document.getElementById("konten");
+
+    if (konten === "sejarah") {
+      div.innerHTML = `
+        <h2>Sejarah Kampus</h2>
+        <p>Yayasan Pendidikan Handayani didirikan oleh Dr H.A.Moh.Alifuddin.M.,M.Kom, sejak tanggal 31 Januari 1996 berdasarkan akta no.20 notaris Mahmud Said ,S.H. di Ujung Pandang.</p>
+        <p>Sekolah Tinggi Manajemen Informatika dan Komputer (STMIK) Handayani didirikan dengan surat keputusan menteri pendidikan nasional Republik Indonesia nomor 37/D/O/1996 tanggal 21 Juni 1996, dan pada tahun 2022 berubah menjadi UNIVERSITAS HANDAYANI MAKASSAR.</p>
+        <p>Universitas Handayani Makassar tepatnya di Jl. Adyaksa Baru No.1 Makassar, Sulawesi Selatan.</p>
+        <a class="btn-beranda" href="index.html">← Kembali ke Beranda</a>
+      `;
+    } else if (konten === "visi") {
+      div.innerHTML = `
+        <h2>Visi & Misi</h2>
+        <p><strong>Visi:</strong></p>
+        <p>Menjadi Universitas unggul menghasilkan Sumberdaya Manusia Technopreneurship Tahun 2047.</p>
+        <p><strong>Misi:</strong></p>
+        <ul>
+          <li>Menyelenggarakan Pendidikan Tinggi melalui sistem pendidikan dan pengajaran yang bermutu berorientasi Technopreneurship.</li>
+          <li>Melaksanakan penelitian dalam bidang Technopreneurship yang dapat menciptakan lapangan kerja baru.</li>
+          <li>Mengembangkan kegiatan pengabdian kepada masyarakat melalui penerapan ilmu pengetahuan dan teknologi untuk kesejahteraan masyarakat.</li>
+        </ul>
+        <a class="btn-beranda" href="index.html">← Kembali ke Beranda</a>
+      `;
+    } else {
+      div.innerHTML = `
+        <h2>Konten tidak ditemukan</h2>
+        <p>Silakan pilih menu Profil di navigasi untuk melihat Sejarah atau Visi & Misi kampus.</p>
+        <a class="btn-beranda" href="index.html">← Kembali ke Beranda</a>
+      `;
+    }
+  </script>
+</body>
+</html>

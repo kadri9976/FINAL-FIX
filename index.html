@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beranda - UNIVERSITAS HANDAYANI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="topbar">
+      <div class="logo">🎓 UNIVERSITAS HANDAYANI</div>
+      <div class="kontak">📧 info@handayani.ac.id | ☎ (0411) 123456</div>
+    </div>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="index.html">Beranda</a></li>
+        <li class="dropdown">
+          <a href="#">Profil ▼</a>
+          <ul class="dropdown-content">
+            <li><a href="tentang.html#sejarah">Sejarah Kampus</a></li>
+            <li><a href="tentang.html#visi">Visi & Misi</a></li>
+            <li><a href="profil_dosen.html">Profil Dosen</a></li>
+          </ul>
+        </li>
+        <li><a href="program_studi.html">Program Studi</a></li>
+        <li><a href="#">Berita</a></li>
+        <li><a href="#">Pengumuman</a></li>
+        <li><a href="#">Galeri</a></li>
+        <li><a href="#">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <section class="banner">
+    <video autoplay muted loop playsinline id="bgVideo">
+      <source src="tes.mp4" type="video/mp4" />
+      Browser Anda tidak mendukung video HTML5.
+    </video>
+    <div class="overlay">
+      <h1>Selamat Datang di UNIVERSITAS HANDAYANI</h1>
+      <p>Mencetak Generasi Unggul dan Berkarakter</p>
+      <button onclick="daftarSekarang()">Daftar Sekarang</button>
+    </div>
+  </section>
+
+  <!-- Berita & Pengumuman -->
+  <section class="info">
+    <div class="kolom">
+      <h3>Berita Terbaru</h3>
+      <ul>
+        <li>📌 Seminar Nasional 2025</li>
+        <li>📌 Mahasiswa Raih Juara PKM</li>
+        <li>📌 Kerjasama dengan Industri</li>
+      </ul>
+    </div>
+    <div class="kolom">
+      <h3>Pengumuman</h3>
+      <ul>
+        <li>📢 Pendaftaran Mahasiswa Baru</li>
+        <li>📢 Libur Semester Ganjil</li>
+        <li>📢 Info Beasiswa Unggulan</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 UNIVERSITAS HANDAYANI | Jl. AP Pettarani, Makassar</p>
+  </footer>
+
+  <script>
+    function daftarSekarang() {
+      alert("Silakan kunjungi halaman pendaftaran untuk informasi lebih lanjut.");
+    }
+  </script>
+</body>
+</html>
