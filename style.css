@@ -1,3 +1,4 @@
+/* Reset & Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +6,21 @@
   font-family: Arial, sans-serif;
 }
 
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
+/* Topbar */
 .topbar {
   background-color: #002147;
   color: white;
@@ -23,6 +39,7 @@
   font-size: 14px;
 }
 
+/* Navbar */
 .navbar {
   background-color: #003366;
 }
@@ -30,13 +47,12 @@
 .nav-list {
   list-style: none;
   display: flex;
-  justify-content: center;  /* << Tambahan ini membuat menu rata tengah */
+  justify-content: center;
   align-items: center;
   gap: 10px;
   padding: 0;
   margin: 0;
 }
-
 
 .nav-list li {
   position: relative;
@@ -51,6 +67,11 @@
 
 .nav-list li a:hover {
   background-color: #004080;
+}
+
+.nav-list li a.active {
+  background-color: #004080;
+  font-weight: bold;
 }
 
 /* Dropdown */
@@ -159,14 +180,7 @@
   font-size: 20px;
 }
 
-/* Footer */
-footer {
-  background-color: #002147;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-/* Tambahan di bagian bawah file */
+/* Profil Dinamis */
 .profil-dinamis {
   padding: 40px 20px;
   background-color: #f0f0f0;
@@ -185,7 +199,10 @@ footer {
   line-height: 1.6;
 }
 
-.nav-list li a.active {
-  background-color: #004080;
-  font-weight: bold;
+/* Footer */
+footer {
+  background-color: #002147;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
