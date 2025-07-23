@@ -6,15 +6,21 @@
   <title>Pengumuman - Pendaftaran Mahasiswa Baru</title>
   <link rel="stylesheet" href="style.css" />
   <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
     body {
       font-family: Arial, sans-serif;
       background-color: #f4f8fc;
-      padding: 20px;
       line-height: 1.7;
+      display: flex;
+      flex-direction: column;
     }
     .container {
+      flex: 1;
       max-width: 800px;
-      margin: auto;
+      margin: 40px auto;
       background: #fff;
       padding: 30px;
       border-radius: 10px;
@@ -36,9 +42,35 @@
       color: white;
       border: none;
       cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
     }
     button:hover {
       background-color: #004091;
+      transform: scale(1.03);
+    }
+    .btn-beranda {
+      display: block;
+      margin: 30px auto 0;
+      width: fit-content;
+      background-color: #6c757d;
+      color: white;
+      padding: 12px 24px;
+      text-align: center;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .btn-beranda:hover {
+      background-color: #5a6268;
+      transform: translateY(-2px) scale(1.05);
+    }
+    footer {
+      background-color: #002147;
+      color: white;
+      text-align: center;
+      padding: 15px;
     }
   </style>
 </head>
@@ -80,6 +112,12 @@
 
       <button type="submit">Kirim Pendaftaran</button>
     </form>
+
+    <a class="btn-beranda" href="index.html">🏠 Kembali ke Beranda</a>
   </div>
+
+  <footer>
+    <p>&copy; 2025 UNIVERSITAS HANDAYANI | Jl. AP Pettarani, Makassar</p>
+  </footer>
 </body>
 </html>
