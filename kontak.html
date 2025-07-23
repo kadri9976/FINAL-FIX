@@ -7,64 +7,97 @@
   <link rel="stylesheet" href="style.css">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       background-color: #f4f8fc;
-      padding: 20px;
+      margin: 0;
+      padding: 0;
     }
     .container {
-      max-width: 700px;
-      margin: auto;
-      background-color: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      margin: 60px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     }
     h1 {
       text-align: center;
       color: #0056b3;
+      margin-bottom: 10px;
+    }
+    h2 {
+      color: #004091;
+      margin-top: 40px;
+    }
+    form {
+      margin-top: 30px;
     }
     label {
-      font-weight: bold;
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: #333;
     }
     input, textarea {
       width: 100%;
-      padding: 10px;
-      margin: 10px 0 20px;
-      border-radius: 6px;
+      padding: 12px;
       border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      font-size: 15px;
     }
     button {
       background-color: #0056b3;
       color: white;
-      padding: 10px 20px;
       border: none;
-      border-radius: 6px;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 8px;
       cursor: pointer;
+      transition: background-color 0.3s ease;
     }
     button:hover {
       background-color: #004091;
     }
     .info {
-      margin-top: 30px;
+      margin-top: 40px;
     }
     .info p {
-      margin: 5px 0;
+      margin: 6px 0;
+      color: #333;
+      font-size: 16px;
+    }
+    .btn-beranda {
+      display: block;
+      margin: 40px auto 0;
+      width: fit-content;
+      background-color: #6c757d;
+      color: white;
+      padding: 10px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      text-align: center;
+    }
+    .btn-beranda:hover {
+      background-color: #5a6268;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Hubungi Kami</h1>
+    <p style="text-align: center; color: #555; font-size: 16px;">Silakan isi formulir di bawah ini untuk menghubungi kami. Kami akan merespons secepat mungkin.</p>
 
     <form action="#" method="POST">
-      <label for="nama">Nama:</label>
-      <input type="text" id="nama" name="nama" required>
+      <label for="nama">Nama Lengkap</label>
+      <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+      <label for="email">Alamat Email</label>
+      <input type="email" id="email" name="email" placeholder="nama@email.com" required>
 
-      <label for="pesan">Pesan:</label>
-      <textarea id="pesan" name="pesan" rows="5" required></textarea>
+      <label for="pesan">Pesan Anda</label>
+      <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
 
       <button type="submit">Kirim Pesan</button>
     </form>
@@ -75,6 +108,8 @@
       <p><strong>Email:</strong> info@handayani.ac.id</p>
       <p><strong>Telepon:</strong> (0411) 123456</p>
     </div>
+
+    <a href="index.html" class="btn-beranda">← Kembali ke Beranda</a>
   </div>
 </body>
 </html>
