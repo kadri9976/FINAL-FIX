@@ -1,0 +1,31 @@
+Deskripsi Tugas Proyek Web Profil Kampus
+1. Halaman Utama (Home Page)
+Menyajikan informasi singkat tentang kampus, termasuk menu navigasi, gambar atau
+video banner.
+2. Halaman Tentang (About)
+Berisi informasi sejarah kampus, visi dan misi, serta profil rektor dan dekan.
+3. Halaman Program Studi (Departments/Programs)
+Menyajikan daftar program studi yang ditawarkan oleh kampus dengan deskripsi singkat.
+4. Halaman Berita dan Acara (News and Events)
+Menampilkan daftar berita dan acara terbaru tentang kampus.
+5. Halaman Galeri (Gallery)
+Menampilkan foto-foto dan video tentang kampus, kegiatan, dan fasilitas.
+6. Halaman Kontak (Contact)
+Menyediakan formulir kontak dan informasi kontak penting.
+7. Halaman Pendaftaran (Admission)
+Menyajikan informasi tentang prosedur pendaftaran dan formulir pendaftaran online.
+8. Penggunaan GitHub
+Memastikan proyek dikelola dengan baik menggunakan GitHub untuk versi kontrol 
+
+
+
+pembagian tugas
+
+
+1 dan 2  akan menyelesaikan tugas : kadri9976 (M.NUR QADRI NATSIR L)
+
+3 dan 4 akan menyelesaikan tugas : andireski1308 (A. RESKI ARYATAMA SAPUTRA
+
+5 dan 6 akan menyelesaikan tugas : ihwana8 (NURUL IHWANA)
+
+7 dan 8 akan menyelesaikan tugas :rahmayana09 (RAHMAYANA)
