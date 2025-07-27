@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Berita Pendidikan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f7f5ff;
+      color: #333;
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #9f40d2;
+    }
+
+    .section-header a {
+      font-size: 1rem;
+      text-decoration: none;
+      color: #9f40d2;
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 0 2rem 3rem;
+    }
+
+    .news-card {
+      background: linear-gradient(to bottom right, #dfe9f3, #ffffff);
+      border-radius: 1rem;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      transition: transform 0.2s ease;
+    }
+
+    .news-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .news-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .news-date {
+      font-size: 0.9rem;
+      color: #777;
+      margin-bottom: 0.75rem;
+    }
+
+    .news-summary {
+      font-size: 1rem;
+      color: #444;
+    }
+
+    @media (max-width: 600px) {
+      .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="section-header">
+    <span>Berita</span>
+    <a href="#">Lihat semua</a>
+  </div>
+
+  <div class="news-grid">
+    <div class="news-card" style="background: linear-gradient(to right, #fdfbfb, #ebedee);">
+      <div class="news-title">Peluncuran Program Kampus Merdeka</div>
+      <div class="news-date">25 Juli 2025</div>
+      <div class="news-summary">
+        Pemerintah meluncurkan inisiatif baru untuk mendukung inovasi dan kreativitas di lingkungan perguruan tinggi.
+      </div>
+    </div>
+
+    <div class="news-card" style="background: linear-gradient(to right, #fceabb, #f8b500);">
+      <div class="news-title">Beasiswa LPDP Gelombang Kedua Dibuka</div>
+      <div class="news-date">20 Juli 2025</div>
+      <div class="news-summary">
+        Kesempatan emas bagi mahasiswa untuk melanjutkan studi ke luar negeri dengan pendanaan penuh dari pemerintah.
+      </div>
+    </div>
+
+    <div class="news-card" style="background: linear-gradient(to right, #e0c3fc, #8ec5fc);">
+      <div class="news-title">Akreditasi Nasional Perguruan Tinggi</div>
+      <div class="news-date">10 Juli 2025</div>
+      <div class="news-summary">
+        BAN-PT memperbarui sistem penilaian akreditasi agar lebih transparan dan berbasis mutu.
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
